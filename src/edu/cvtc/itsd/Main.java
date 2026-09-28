@@ -228,6 +228,9 @@ private static class InputFilter extends DocumentFilter {
 
     // Create our GUI.
     JFrame frame = new JFrame();
+
+    // Ticket 502: Close the application when the JFrame is closed.
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setMinimumSize(new Dimension(320, 240));
     frame.setPreferredSize(new Dimension(640, 480));
     frame.setMaximumSize(new Dimension(640, 480));
