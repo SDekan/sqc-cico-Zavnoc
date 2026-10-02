@@ -1,6 +1,6 @@
 Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command line. You can otherwise use your IDE to build and run CiCo.
 
-# Module 2: Sample test for the happy path. 
+# Module 2: Sample test for the happy path.
 
 ## Test steps
 1. Build and run CiCo.
@@ -40,7 +40,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 * The version number should be displayed after "CiCo" at the bottom.
 
 
-# Module 3: Visibility of system status 
+# Module 3: Visibility of system status
 
 ## Test steps
 1. Build and run CiCo.
@@ -62,3 +62,22 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 * Should display "Developer" for the user name.
 
 
+# Module 4: Prevent non-numerical card number input
+
+## Test steps
+1. Build and run CiCo.
+2. Enter abcd into the card number field.
+
+## Expected results:
+* The card number field should remain empty after step 2.
+
+# Module 5: Application closing after window closed request
+
+## Test Steps
+1. Build and run CiCo.
+2. Make sure that CiCo loads up properly.
+3. Press the X in the top right corner to close CiCo.
+
+## Expected results
+* Should properly close out of CiCo
+* Should allow for CiCo to boot up after the closing as normal.
